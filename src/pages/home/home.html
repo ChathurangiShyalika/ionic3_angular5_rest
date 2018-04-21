@@ -9,7 +9,8 @@
 <ion-content>
   <ion-list inset>
     <ion-item *ngFor="let user of users">
-      <h2>{{user.name}}</h2>
+      <h1>{{user.id}}</h1>
+      <h2>{{user.first_name}} {{user.last_name}}</h2>
       <p>{{user.email}}</p>
     </ion-item>
   </ion-list>

@@ -9,7 +9,7 @@ import { Injectable } from '@angular/core';
 */
 @Injectable()
 export class RestProvider {
-  apiUrl = 'https://jsonplaceholder.typicode.com';
+  apiUrl = 'http://localhost:3000';
   constructor(public http: HttpClient) {
     console.log('Hello RestProvider Provider');
   }
