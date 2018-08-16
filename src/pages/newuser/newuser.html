@@ -1,0 +1,22 @@
+<ion-content padding>
+  <h2>Add User</h2>
+  <form (ngsubmit)="saveUser()">
+      <ion-item>
+          <ion-label>User ID</ion-label>
+          <ion-input type="text" [(ngmodel)]="user.id" name="id"></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label>First Name</ion-label>
+          <ion-input type="text" [(ngmodel)]="user.first_name" name="first_name"></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label>Email</ion-label>
+          <ion-input type="text" [(ngmodel)]="user.last_name" name="last_name"></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label>Email</ion-label>
+          <ion-input type="email" [(ngmodel)]="user.email" name="email"></ion-input>
+      </ion-item>       
+      <button ion-button type="submit" block>Add New User</button>
+  </form>
+</ion-content>
